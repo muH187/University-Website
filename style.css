@@ -4,7 +4,6 @@
     margin: 0;
     box-sizing: border-box;
 }
-
 /*------Header-------*/
 .header{
     height: 100vh;
@@ -23,6 +22,9 @@ nav{
     padding: 2% 6%;
     align-items: center;
 }
+nav .fa{
+    display: none;
+}
 nav img{
     width: 150px;
 }
@@ -37,6 +39,22 @@ nav img{
 .nav_links ul li a{
     color: #fff;
     text-decoration: none;
+    transition: 0.4s;
+}
+.nav_links ul li::after{
+    content: '';
+    width: 0px;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav_links ul li a:hover{
+    color: burlywood;
+}
+.nav_links ul li:hover::after{
+    width: 100%;
 }
 /* Text Box */
 .text_box{
@@ -76,7 +94,7 @@ nav img{
     margin: auto;
     text-align: center;
     margin-top: 100px;
-    margin-bottom: 100px;
+    margin-bottom: 60px;
 }
 .course h1{
     font-size: 28px;
@@ -175,6 +193,7 @@ nav img{
 }
 .facilities-col{
     flex-basis: 31%;
+    border-bottom: 1px solid #555;
 }
 .facilities-col img{
     width: 100%;
@@ -187,6 +206,7 @@ nav img{
 }
 .facilities-col p{
     text-align: left;
+    margin-bottom: 10px;
 }
 
 /* Testimonial */
@@ -221,6 +241,10 @@ nav img{
     margin-left: 30px;
 }
 .testimonial-text h2{
+    margin-top: 10px;
+}
+.testimonial-col .fa {
+    color: #f4433f;
     margin-top: 10px;
 }
 
@@ -284,13 +308,13 @@ nav img{
 }
 .sub-header h1{
     color: #fff;
-    margin-top: 55px;
+    /* margin-top: 55px; */
     font-size: 30px;
 }
 .about-us{
     width: 80%;
     margin: auto;
-    margin-top: 150px;
+    margin-top: 100px;
 }
 .about-col{
     flex-basis: 48%;
@@ -416,4 +440,96 @@ nav img{
     padding: 15px 10px;
     border-radius: 7px;
     border: 1px solid gray;
+}
+
+/* Responsiveness */
+@media(max-width:600px){
+    /* header */
+    .nav_links{
+        position: absolute;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        border-radius: 10px;
+        transition: 1s;
+    }
+    .navLinks ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .navLinks ul li{
+        display: block;
+        margin-bottom: 13px;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        font-size: 25px;
+        padding: 10px;
+        margin-bottom: 20px;
+        cursor: pointer;
+    }
+    nav .fa-bars{
+        margin-top: 20px;
+    }
+    nav a{
+        margin-top: 20px;
+    }
+    nav a img{
+        width: 180px;
+    }
+    .text_box{
+        position: absolute;
+        top: 450px;
+    }
+    .text_box h1{
+        font-size: 48px;
+    }
+    .text_box p{
+        font-size: 22px;
+    }
+    /* row */
+    .row{
+        flex-direction: column;
+        gap: 20px;
+    }
+    /* course */
+    .course h1{
+        margin-bottom: 20px;
+    }
+    .course p{
+        margin-bottom: 30px;
+    }
+    .course-col{
+        margin-bottom: 20px;
+        min-height: 170px;
+    }
+    /* campus */
+    .campus h1{
+        margin-bottom: 30px;
+    }
+    .campus p{
+        margin-bottom: 30px;
+    }
+    /* facilities */
+    .facilities p{
+        margin-bottom: 30px;
+    }
+
+    /* === Other Pages === */
+    .sub-header h1{
+        margin-top: 100px;
+        font-size: 40px;
+    }
+    #h1-blog{
+        font-size: 30px;
+    }
+    .about-col img{
+        margin-top: 30px;
+    }
+
 }

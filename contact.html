@@ -17,7 +17,8 @@
         <a href="index.html">
           <img src="images/logo.png" alt="" />
         </a>
-        <div class="nav_links">
+        <div class="nav_links navLinks" id="nav-link">
+          <i class="fa fa-solid fa-xmark" onclick="hideMenu()"></i>
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About Us</a></li>
@@ -26,6 +27,7 @@
             <li><a href="contact.html">Contact Us</a></li>
           </ul>
         </div>
+        <i class="fa fa-solid fa-bars" onclick="showMenu()"></i>
       </nav>
       <h1>Contact Us</h1>
     </section>
@@ -85,7 +87,7 @@
       <h3>About Us</h3>
       <p>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore
-        architecto voluptas voluptates inventore, distinctio molestias.<br />
+        architecto voluptas voluptates inventore, distinctio molestias.<br/><br>
         Nulla optio et accusamus consequatur, voluptatem odit ipsa beatae
         veritatis asperiores nemo in sed.
       </p>
@@ -100,5 +102,6 @@
         Tutorials
       </p>
     </section>
+    <script src="script.js"></script>
   </body>
 </html>

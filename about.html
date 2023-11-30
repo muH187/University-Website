@@ -14,7 +14,8 @@
         <a href="index.html">
           <img src="images/logo.png" alt="" />
         </a>
-        <div class="nav_links">
+        <div class="nav_links navLinks" id="nav-link">
+          <i class="fa fa-solid fa-xmark" onclick="hideMenu()"></i>
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About Us</a></li>
@@ -23,6 +24,7 @@
             <li><a href="contact.html">Contact Us</a></li>
           </ul>
         </div>
+        <i class="fa fa-solid fa-bars" onclick="showMenu()"></i>
       </nav>
       <h1>About Us</h1>
     </section>
@@ -32,7 +34,7 @@
       <div class="row">
         <div class="about-col">
           <h1>We are the world's largest university</h1>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim ex aute m Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et consequatur aperiam voluptates dignissimos maxime odio amet fuga reprehenderit quo laboriosam. fuga voluptatem nulla voluptatibus, exercitationem omnis ea? Sit, minus.</p>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim ex aute m Lorem ipsum dolor sit, amet consectetur <br> <br> adipisicing elit. Et consequatur aperiam voluptates dignissimos maxime odio amet fuga reprehenderit quo laboriosam. fuga voluptatem nulla voluptatibus, exercitationem omnis ea? Sit, minus.</p>
           <a href="" class="hero_btn red_btn">Explore Now</a>
         </div>
         <div class="about-col">
@@ -47,7 +49,7 @@
     <!-- Footer -->
     <section class="footer">
       <h3>About Us</h3>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore architecto voluptas voluptates inventore, distinctio molestias.<br> Nulla optio et accusamus consequatur, voluptatem odit ipsa beatae veritatis asperiores nemo in sed.</p>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore architecto voluptas voluptates inventore, distinctio molestias. <br><br> Nulla optio et accusamus consequatur, voluptatem odit ipsa beatae veritatis asperiores nemo in sed.</p>
       <div class="icons">
         <i class="fa fa-facebook"></i>
         <i class="fa fa-twitter"></i>
@@ -56,6 +58,6 @@
       </div>
       <p>Made with <span><i class="fa fa-heart-o heart"></i></span> by Easy Tutorials</p>
     </section>
-
+    <script src="script.js"></script>
   </body>
 </html>
